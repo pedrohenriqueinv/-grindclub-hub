@@ -20,6 +20,7 @@
     @apply bg-[#080d16] text-slate-100 antialiased;
     font-family: Aptos, "Segoe UI Variable", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    font-variant-numeric: tabular-nums;
   }
 
   button,
