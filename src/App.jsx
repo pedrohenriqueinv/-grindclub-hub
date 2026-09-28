@@ -156,7 +156,7 @@ export default function App() {
       />
 
       {/* Área de Conteúdo Principal */}
-      <main className="flex-1 flex overflow-hidden">
+      <main className="flex-1 min-w-0 flex overflow-hidden">
         {activeTab === 'dashboard' && (
           <DashboardView
             currentUser={currentUser}
