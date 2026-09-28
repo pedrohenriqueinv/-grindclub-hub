@@ -1,4 +1,28 @@
-# React + Vite
+# GrindClub Ops Hub
+
+Painel operacional para acompanhar contas, checklist, roadmap e ferramentas do duo GrindClub.
+
+## Identidade visual
+
+O painel usa uma interface preta de alto contraste, com superfícies em tons neutros, estados ativos claros e cores semânticas reservadas para status operacionais. A navegação e a troca entre os perfis Pedro Henrique e Pra Noia permanecem preservadas em telas desktop e mobile.
+
+## Desenvolvimento
+
+```bash
+npm install
+npm run dev
+```
+
+Para validar a entrega:
+
+```bash
+npm test
+npm run build
+```
+
+## Base técnica
+
+Este projeto usa React + Vite, Tailwind CSS e Oxlint.
 
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
