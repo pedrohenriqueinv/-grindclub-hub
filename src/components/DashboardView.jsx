@@ -167,7 +167,7 @@ export default function DashboardView({
             <Bell size={16} />
           </button>
 
-          <div className="size-8 rounded-full bg-gradient-to-br from-cyan-300/90 to-sky-500/80 border border-white/20 flex items-center justify-center text-[11px] font-bold text-slate-950 shadow-sm" title={`Perfil ativo: ${currentUser?.name || 'Pedro Henrique'}`}>
+          <div className="size-8 rounded-full bg-gradient-to-br from-cyan-300/90 to-sky-500/80 border border-white/20 flex items-center justify-center text-[11px] font-bold text-slate-950 shadow-sm" role="img" aria-label={`Perfil ativo: ${currentUser?.name || 'Pedro Henrique'}`} title={`Perfil ativo: ${currentUser?.name || 'Pedro Henrique'}`}>
             {currentUser?.avatar || 'PH'}
           </div>
         </div>
