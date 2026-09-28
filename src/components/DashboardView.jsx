@@ -20,6 +20,7 @@ import {
   Lock,
   Globe
 } from 'lucide-react';
+import { getProfileFirstName } from '../data/profiles';
 
 export default function DashboardView({ 
   currentUser, 
@@ -71,7 +72,7 @@ export default function DashboardView({
         return { 
           ...t, 
           done: nextDone,
-          completedBy: nextDone ? (currentUser?.name?.split(' ')[0] || 'Você') : null 
+          completedBy: nextDone ? getProfileFirstName(currentUser) : null 
         };
       }
       return t;
@@ -613,7 +614,7 @@ export default function DashboardView({
 
               {/* Greeting Bubble */}
               <div className="p-3 rounded-xl bg-[#121826] border border-[#1e2638] text-xs text-slate-300 leading-relaxed">
-                Fala, {currentUser?.name?.split(' ')[0] || 'Pedro'}!<br/>
+                Fala, {getProfileFirstName(currentUser)}!<br/>
                 Em que posso te ajudar hoje?
               </div>
 
