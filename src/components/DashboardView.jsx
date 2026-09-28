@@ -299,7 +299,7 @@ export default function DashboardView({
                     <div className="flex items-center gap-2.5">
                       <div className="w-8 h-8 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center overflow-hidden">
                         {acc.avatar ? (
-                          <img src={acc.avatar} alt={acc.handle} className="w-full h-full object-cover" />
+                          <img src={acc.avatar} alt={acc.handle} loading="lazy" className="w-full h-full object-cover" />
                         ) : (
                           <span className="text-[10px] font-bold text-white">{acc.handle.slice(1, 3).toUpperCase()}</span>
                         )}
@@ -528,7 +528,7 @@ export default function DashboardView({
               {/* Stepper Preview Card */}
               <div className="bg-[#121826] border border-[#1e2638] rounded-xl p-3.5 flex items-center gap-3 mt-2">
                 <div className="w-16 h-12 rounded-lg bg-black overflow-hidden border border-slate-800 shrink-0">
-                  <img src="/media/tiktok_signup_alemanha.jpg" alt="TikTok" className="w-full h-full object-cover opacity-80" />
+                  <img src="/media/tiktok_signup_alemanha.jpg" alt="TikTok" loading="lazy" className="w-full h-full object-cover opacity-80" />
                 </div>
                 <div className="flex-1 min-w-0">
                   <h4 className="text-xs font-bold text-white leading-tight">Etapa 1 — Fundação & Blindagem</h4>

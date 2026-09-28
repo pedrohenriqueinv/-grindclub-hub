@@ -135,7 +135,7 @@ export default function ContasView({
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center font-bold text-sm text-white overflow-hidden">
                       {acc.avatar ? (
-                        <img src={acc.avatar} alt={acc.handle} className="w-full h-full object-cover" />
+                        <img src={acc.avatar} alt={acc.handle} loading="lazy" className="w-full h-full object-cover" />
                       ) : (
                         acc.handle.slice(1, 3).toUpperCase()
                       )}
