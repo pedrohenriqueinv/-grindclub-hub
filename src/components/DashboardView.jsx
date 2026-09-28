@@ -115,7 +115,7 @@ export default function DashboardView({
             cx={size / 2}
             cy={size / 2}
             r={radius}
-            stroke="#1a2234"
+            stroke="#2a2a2a"
             strokeWidth={stroke}
             fill="transparent"
           />
@@ -145,8 +145,8 @@ export default function DashboardView({
       <header className="h-14 border-b border-[#19202f] px-8 flex items-center justify-between bg-[#090d14]/90 backdrop-blur-sm shrink-0">
         <div className="flex items-center gap-3 min-w-0">
           <h1 className="text-lg font-extrabold text-white tracking-tight">Dashboard</h1>
-          <span className="inline-flex max-w-[132px] items-center gap-2 truncate rounded-full border border-cyan-300/20 bg-cyan-300/10 px-2.5 py-1 text-[10px] font-semibold text-cyan-200">
-            <span className="size-1.5 rounded-full bg-cyan-300" />
+          <span className="inline-flex max-w-[132px] items-center gap-2 truncate rounded-full border border-white/15 bg-white/5 px-2.5 py-1 text-[10px] font-semibold text-zinc-200">
+            <span className="size-1.5 rounded-full bg-white" />
             <span className="truncate">{currentUser?.name || 'Pedro Henrique'}</span>
           </span>
         </div>
@@ -168,7 +168,7 @@ export default function DashboardView({
             <Bell size={16} />
           </button>
 
-          <div className="size-8 rounded-full bg-gradient-to-br from-cyan-300/90 to-sky-500/80 border border-white/20 flex items-center justify-center text-[11px] font-bold text-slate-950 shadow-sm" role="img" aria-label={`Perfil ativo: ${currentUser?.name || 'Pedro Henrique'}`} title={`Perfil ativo: ${currentUser?.name || 'Pedro Henrique'}`}>
+          <div className="size-8 rounded-full bg-gradient-to-br from-white/90 to-zinc-400/80 border border-white/20 flex items-center justify-center text-[11px] font-bold text-slate-950 shadow-sm" role="img" aria-label={`Perfil ativo: ${currentUser?.name || 'Pedro Henrique'}`} title={`Perfil ativo: ${currentUser?.name || 'Pedro Henrique'}`}>
             {currentUser?.avatar || 'PH'}
           </div>
         </div>
@@ -195,7 +195,7 @@ export default function DashboardView({
                 <span className="text-xs font-semibold text-slate-500 flex items-center gap-0.5">
                   0%
                 </span>
-                <Sparkline color="#475569" />
+                <Sparkline color="#6b6b6b" />
               </div>
             </div>
           </div>
@@ -231,7 +231,7 @@ export default function DashboardView({
               <span className="text-xs font-semibold text-slate-500 flex items-center gap-0.5">
                 0%
               </span>
-              <Sparkline color="#475569" />
+              <Sparkline color="#6b6b6b" />
             </div>
           </div>
 
@@ -250,7 +250,7 @@ export default function DashboardView({
               <span className="text-xs font-semibold text-slate-500 flex items-center gap-0.5">
                 0%
               </span>
-              <Sparkline color="#475569" />
+              <Sparkline color="#6b6b6b" />
             </div>
           </div>
         </div>

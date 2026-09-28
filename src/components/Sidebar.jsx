@@ -52,7 +52,7 @@ export default function Sidebar({
       <div className="flex flex-col flex-1 overflow-y-auto">
         {/* Brand Logo (Monocromático Stealth) */}
         <div className="p-5 flex items-center gap-3 border-b border-[#19202f]/60">
-          <div className="size-10 rounded-2xl bg-gradient-to-br from-cyan-300 to-sky-500 text-slate-950 border border-white/20 flex items-center justify-center p-[2px] shadow-[0_8px_22px_rgba(34,211,238,0.18)]">
+          <div className="size-10 rounded-2xl bg-gradient-to-br from-white to-zinc-400 text-slate-950 border border-white/20 flex items-center justify-center p-[2px] shadow-[0_8px_22px_rgba(255,255,255,0.12)]">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-white">
               <path d="M12 2a10 10 0 1 0 10 10h-6" />
               <path d="M12 6a6 6 0 1 0 6 6h-3" />

@@ -4,20 +4,20 @@
 
 :root {
   color-scheme: dark;
-  --hub-page: #080d16;
-  --hub-sidebar: #0a101a;
-  --hub-panel: #0f1724;
-  --hub-panel-raised: #131e2d;
-  --hub-border: #203047;
-  --hub-muted: #8fa0b8;
-  --hub-accent: #67e8f9;
-  --hub-accent-strong: #38bdf8;
+  --hub-page: #050505;
+  --hub-sidebar: #080808;
+  --hub-panel: #101010;
+  --hub-panel-raised: #171717;
+  --hub-border: #2a2a2a;
+  --hub-muted: #a1a1aa;
+  --hub-accent: #f4f4f5;
+  --hub-accent-strong: #ffffff;
   --hub-ease: cubic-bezier(0.2, 0, 0, 1);
 }
 
 @layer base {
   body {
-    @apply bg-[#080d16] text-slate-100 antialiased;
+    @apply bg-[#050505] text-slate-100 antialiased;
     font-family: Aptos, "Segoe UI Variable", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
     font-variant-numeric: tabular-nums;
@@ -41,13 +41,13 @@
 }
 
 ::selection {
-  background: #67e8f9;
-  color: #05141d;
+  background: #ffffff;
+  color: #050505;
 }
 
 @layer components {
   .hub-sidebar {
-    background: linear-gradient(180deg, #0a101a 0%, #080d16 100%);
+    background: linear-gradient(180deg, #0a0a0a 0%, #050505 100%);
   }
 
   .hub-sidebar button,
@@ -68,20 +68,77 @@
   }
 }
 
+/* Black theme bridge for the legacy Tailwind utility palette. */
+@layer utilities {
+  [class*="bg-[#080b11]"],
+  [class*="bg-[#090d14]"],
+  [class*="bg-[#0b0f17]"],
+  [class*="bg-[#0c1018]"] {
+    background-color: #050505 !important;
+  }
+
+  [class*="bg-[#0e131f]"],
+  [class*="bg-[#0f141f]"],
+  [class*="bg-[#0f1724]"] {
+    background-color: #101010 !important;
+  }
+
+  [class*="bg-[#101624]"],
+  [class*="bg-[#121826]"],
+  [class*="bg-[#121927]"],
+  [class*="bg-[#131927]"],
+  [class*="bg-[#141b29]"],
+  [class*="bg-[#182032]"] {
+    background-color: #181818 !important;
+  }
+
+  [class*="bg-[#151c2b]"],
+  [class*="bg-[#1a2336]"],
+  [class*="bg-[#222d45]"],
+  [class*="bg-[#232e48]"] {
+    background-color: #242424 !important;
+  }
+
+  [class*="border-[#19202f]"],
+  [class*="border-[#1e2638]"],
+  [class*="border-[#27324b]"],
+  [class*="border-[#27324b]/70"] {
+    border-color: #2b2b2b !important;
+  }
+
+  [class*="border-[#203047]"] {
+    border-color: #303030 !important;
+  }
+
+  [class*="text-cyan-300"],
+  [class*="text-cyan-200"],
+  [class*="text-sky-500"] {
+    color: #e4e4e7 !important;
+  }
+
+  [class*="border-cyan-300"] {
+    border-color: rgb(255 255 255 / 0.16) !important;
+  }
+
+  [class*="bg-cyan-300"] {
+    background-color: #f4f4f5 !important;
+  }
+}
+
 /* Custom modern thin scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #080d16;
+  background: #050505;
 }
 ::-webkit-scrollbar-thumb {
-  background: #2a3c57;
+  background: #303030;
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #4c6383;
+  background: #4a4a4a;
 }
 
 @media (max-width: 767px) {

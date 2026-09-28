@@ -165,7 +165,7 @@ export default function ChecklistView({ tasks = [], setTasks, currentUser, partn
               {partnerUser?.avatar || 'PN'}
             </div>
             <div>
-              <div className="text-[10px] text-cyan-300/80">Perfil parceiro</div>
+              <div className="text-[10px] text-zinc-300">Perfil parceiro</div>
               <div className="font-bold text-white">{partnerUser?.name}</div>
             </div>
           </div>
