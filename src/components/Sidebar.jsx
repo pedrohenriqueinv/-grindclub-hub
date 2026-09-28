@@ -31,7 +31,7 @@ export default function Sidebar({
     { id: 'contas', label: 'Contas', icon: User },
     { id: 'roadmap', label: 'Roadmap', icon: BookOpen },
     { id: 'checklist', label: 'Checklist', icon: CheckSquare },
-    { id: 'estudio', label: 'Estúdio', icon: Wand2 },
+    { id: 'estudio', label: 'Ferramentas', icon: Wand2 },
     { id: 'calculadora', label: 'Calculadora', icon: Calculator },
     { id: 'tutoriais', label: 'Tutoriais', icon: PlayCircle },
     { id: 'vyk-ai', label: 'Vyk AI', icon: MessageSquare },
@@ -47,7 +47,7 @@ export default function Sidebar({
   };
 
   return (
-    <aside className="hub-sidebar w-64 bg-[#090d14] border-r border-[#19202f] flex flex-col justify-between h-screen select-none shrink-0 z-30">
+    <aside className="hub-sidebar w-[232px] bg-[#090d14] border-r border-[#19202f] flex flex-col justify-between h-screen select-none shrink-0 z-30">
       {/* Top Section: Logo & Nav */}
       <div className="flex flex-col flex-1 overflow-y-auto">
         {/* Brand Logo (Monocromático Stealth) */}
@@ -76,19 +76,14 @@ export default function Sidebar({
                 aria-label={`Abrir ${item.label}`}
                 className={`sidebar-nav-item w-full flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs font-semibold transition-all ${
                   isActive
-                    ? 'bg-white text-slate-950 shadow-[0_8px_22px_rgba(255,255,255,0.09)] border border-white'
+                    ? 'bg-[#1a1a1a] text-white shadow-[0_8px_22px_rgba(0,0,0,0.18)] border border-white/10'
                     : 'text-slate-400 hover:text-slate-200 hover:bg-[#0e131f]'
                 }`}
               >
-                <Icon size={17} className={isActive ? 'text-slate-950' : 'text-slate-500'} />
+                <Icon size={17} className={isActive ? 'text-white' : 'text-slate-500'} />
                 <span className="sidebar-label">{item.label}</span>
                 {item.id === 'vyk-ai' && (
                   <span className="ml-auto w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                )}
-                {item.id === 'checklist' && (
-                  <span className="sidebar-label ml-auto text-[9px] font-bold px-1.5 py-0.5 rounded bg-[#1e2638] text-slate-300 border border-slate-700">
-                    Duo
-                  </span>
                 )}
               </button>
             );
