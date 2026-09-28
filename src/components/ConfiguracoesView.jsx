@@ -72,7 +72,7 @@ export default function ConfiguracoesView({ currentUser, setCurrentUser, partner
                   Online
                 </span>
               </div>
-              <p className="text-[11px] text-slate-400">Parceiro conectado no computador dele.</p>
+              <p className="text-[11px] text-slate-400">Pra Noia conectado no computador dele.</p>
             </div>
           </div>
         </div>
