@@ -20,6 +20,10 @@ npm test
 npm run build
 ```
 
+## Produção
+
+O painel publicado está disponível em [grindclub-hub.vercel.app](https://grindclub-hub.vercel.app/).
+
 ## Base técnica
 
 Este projeto usa React + Vite, Tailwind CSS e Oxlint.
