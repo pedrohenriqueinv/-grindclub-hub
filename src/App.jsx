@@ -11,22 +11,15 @@ import TutoriaisView from './components/TutoriaisView';
 import ApelacoesView from './components/ApelacoesView';
 import ConfiguracoesView from './components/ConfiguracoesView';
 import MediaModal from './components/MediaModal';
+import { DEFAULT_PARTNER_PROFILE, DEFAULT_PROFILE } from './data/profiles';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('dashboard');
 
   // Estado dos membros do Plano Duo
-  const [currentUser, setCurrentUser] = useState({
-    name: 'Pedro Henrique',
-    avatar: 'PH',
-    role: 'Criador & Estrategista'
-  });
+  const [currentUser, setCurrentUser] = useState(DEFAULT_PROFILE);
 
-  const [partnerUser, setPartnerUser] = useState({
-    name: 'Parceiro',
-    avatar: 'A',
-    role: 'Editor & Operador'
-  });
+  const [partnerUser, setPartnerUser] = useState(DEFAULT_PARTNER_PROFILE);
 
   // CONTAS TOTALMENTE ZERADAS POR PADRÃO ("Zero KM") CONFORME SOLICITADO
   const [accounts, setAccounts] = useState([
@@ -126,17 +119,17 @@ export default function App() {
   const [tasks, setTasks] = useState([
     { id: 1, text: 'Aquecer Conta 01 (1h de lupa no nicho)', done: false, time: '10:00 - 11:00', user: 'Pedro', category: 'diario' },
     { id: 2, text: 'Postar 2 vídeos curtos (Pré-monetização)', done: false, time: '12:30', user: 'Pedro', category: 'diario' },
-    { id: 3, text: 'Minerar 3 temas na extensão Sort Feed', done: false, time: 'Pendente', user: 'Parceiro', category: 'diario' },
+    { id: 3, text: 'Minerar 3 temas na extensão Sort Feed', done: false, time: 'Pendente', user: 'Pra Noia', category: 'diario' },
     { id: 4, text: 'Editar 1 vídeo > 60s (Pós-monetização)', done: false, time: 'Pendente', user: 'Pedro', category: 'diario' },
-    { id: 5, text: 'Responder comentários', done: false, time: 'Pendente', user: 'Parceiro', category: 'diario' },
+    { id: 5, text: 'Responder comentários', done: false, time: 'Pendente', user: 'Pra Noia', category: 'diario' },
     { id: 6, text: 'Analisar métricas e ajustar estratégia', done: false, time: 'Pendente', user: 'Pedro', category: 'diario' },
     { id: 7, text: 'Criar e-mail Outlook exclusivo em guia anônima', done: false, time: 'Fase 1', user: 'Pedro', category: 'pre' },
     { id: 8, text: 'Cadastrar no TikTok Web selecionando país Alemanha no rodapé', done: false, time: 'Fase 1', user: 'Pedro', category: 'pre' },
-    { id: 9, text: 'Gravar 5s câmera nativa + 5s mini-games filter (anti-bot)', done: false, time: 'Fase 1', user: 'Parceiro', category: 'pre' },
+    { id: 9, text: 'Gravar 5s câmera nativa + 5s mini-games filter (anti-bot)', done: false, time: 'Fase 1', user: 'Pra Noia', category: 'pre' },
     { id: 10, text: 'Submeter foto nítida da CNH brasileira (país Brasil)', done: false, time: 'Fase 2', user: 'Pedro', category: 'pos' },
     { id: 11, text: 'Conectar conta do PayPal brasileiro (sem Tax Form)', done: false, time: 'Fase 2', user: 'Pedro', category: 'pos' },
     { id: 12, text: 'Configurar 10 perfis gratuitos no Dolphin Anty', done: false, time: 'Setup', user: 'Pedro', category: 'contingencia' },
-    { id: 13, text: 'Adicionar proxy residencial Socks5 da Alemanha', done: false, time: 'Setup', user: 'Parceiro', category: 'contingencia' }
+    { id: 13, text: 'Adicionar proxy residencial Socks5 da Alemanha', done: false, time: 'Setup', user: 'Pra Noia', category: 'contingencia' }
   ]);
 
   // Modal interativo de mídias
