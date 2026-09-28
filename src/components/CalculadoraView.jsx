@@ -149,7 +149,7 @@ export default function CalculadoraView() {
                 </div>
 
                 <div className="p-2.5 bg-[#0f141f] rounded-lg border border-[#1e2638]/70">
-                  <div className="text-[10px] text-slate-500">Parceiro</div>
+                  <div className="text-[10px] text-slate-500">Pra Noia</div>
                   <div className="text-sm font-bold text-white font-mono mt-0.5">R$ {halfBrl.toFixed(2)}</div>
                 </div>
               </div>
