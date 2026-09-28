@@ -6,6 +6,11 @@ Painel operacional para acompanhar contas, checklist, roadmap e ferramentas do d
 
 O painel usa uma interface preta de alto contraste, com superfícies em tons neutros, estados ativos claros e cores semânticas reservadas para status operacionais. A navegação e a troca entre os perfis Pedro Henrique e Pra Noia permanecem preservadas em telas desktop e mobile.
 
+## Perfis do duo
+
+- **Pedro Henrique** — perfil principal e sessão ativa padrão.
+- **Pra Noia** — perfil parceiro, isolado no seletor de sessão e identificado nas áreas operacionais.
+
 ## Desenvolvimento
 
 ```bash
