@@ -108,8 +108,13 @@
 
   .hub-sidebar .sidebar-nav-item {
     width: 48px;
+    min-height: 44px;
     justify-content: center;
     padding-inline: 0.75rem;
+  }
+
+  .hub-sidebar > div:last-child > button {
+    min-height: 44px;
   }
 
   .hub-sidebar > div:last-child {
