@@ -105,7 +105,7 @@ export default function ChecklistView({ tasks = [], setTasks, currentUser, partn
             </span>
           </div>
           <p className="text-xs text-slate-400 mt-1">
-            Rotina diária de alta performance para Pedro Henrique & Parceiro • Execução disciplinada do método Grind Club
+            Rotina diária de alta performance para Pedro Henrique & Pra Noia • Execução disciplinada do método Grind Club
           </p>
         </div>
 
@@ -162,10 +162,10 @@ export default function ChecklistView({ tasks = [], setTasks, currentUser, partn
 
           <div className="p-3 rounded-xl bg-[#121826] border border-[#1e2638] flex items-center gap-3">
             <div className="w-8 h-8 rounded-full bg-slate-800 border border-slate-700 text-slate-200 font-bold text-xs flex items-center justify-center">
-              {partnerUser?.avatar || 'A'}
+              {partnerUser?.avatar || 'PN'}
             </div>
             <div>
-              <div className="text-[10px] text-slate-400">Parceiro</div>
+              <div className="text-[10px] text-cyan-300/80">Perfil parceiro</div>
               <div className="font-bold text-white">{partnerUser?.name}</div>
             </div>
           </div>
@@ -317,7 +317,7 @@ export default function ChecklistView({ tasks = [], setTasks, currentUser, partn
                     className="w-full bg-[#121826] border border-[#1e2638] rounded-xl px-3.5 py-2.5 text-white focus:outline-none focus:border-slate-500"
                   >
                     <option value={currentUser?.name?.split(' ')[0] || 'Pedro'}>{currentUser?.name}</option>
-                    <option value={partnerUser?.name?.split(' ')[0] || 'Parceiro'}>{partnerUser?.name}</option>
+                    <option value={partnerUser?.name?.split(' ')[0] || 'Pra Noia'}>{partnerUser?.name}</option>
                     <option value="Duo">Duo (Ambos)</option>
                   </select>
                 </div>
