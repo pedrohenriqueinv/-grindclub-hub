@@ -2,6 +2,16 @@
 
 Você e seu amigo podem colocar esse aplicativo no ar em menos de 2 minutos para acessar de qualquer computador ou celular.
 
+### Atualização do projeto já vinculado
+
+Este repositório já está conectado ao projeto Vercel `grindclub-hub`. Depois de revisar as alterações localmente, use:
+
+```bash
+npx vercel --prod
+```
+
+O comando publica a branch atual em produção e mantém o mesmo domínio do projeto existente.
+
 ---
 
 ### Opção 1: Direto pelo Terminal (Mais Rápido — 1 Minuto)
