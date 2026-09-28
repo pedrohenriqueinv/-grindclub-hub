@@ -163,15 +163,16 @@ export default function Sidebar({
       {/* Modal / Dialog de Troca de Usuários Duo */}
       {showSwitchModal && (
         <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className="bg-[#0e131f] border border-[#19202f] rounded-2xl p-6 max-w-sm w-full space-y-5 shadow-2xl">
+          <div className="bg-[#0e131f] border border-[#19202f] rounded-2xl p-6 max-w-sm w-full space-y-5 shadow-2xl" role="dialog" aria-modal="true" aria-labelledby="profile-switcher-title">
             <div className="flex items-center justify-between border-b border-[#19202f] pb-3">
               <div className="flex items-center gap-2">
                 <Users size={16} className="text-white" />
-                <h3 className="text-sm font-bold text-white">Alternar Membro da Dupla</h3>
+                <h3 id="profile-switcher-title" className="text-sm font-bold text-white">Alternar Membro da Dupla</h3>
               </div>
               <button
                 onClick={() => setShowSwitchModal(false)}
                 className="text-slate-400 hover:text-white text-xs"
+                aria-label="Fechar seletor de perfil"
               >
                 ✕
               </button>
