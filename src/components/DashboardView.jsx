@@ -142,10 +142,16 @@ export default function DashboardView({
     <div className="flex-1 bg-[#090d14] h-screen overflow-y-auto flex flex-col">
       {/* Top Header */}
       <header className="h-14 border-b border-[#19202f] px-8 flex items-center justify-between bg-[#090d14]/90 backdrop-blur-sm shrink-0">
-        <h1 className="text-lg font-extrabold text-white tracking-tight">Dashboard</h1>
+        <div className="flex items-center gap-3 min-w-0">
+          <h1 className="text-lg font-extrabold text-white tracking-tight">Dashboard</h1>
+          <span className="inline-flex max-w-[132px] items-center gap-2 truncate rounded-full border border-cyan-300/20 bg-cyan-300/10 px-2.5 py-1 text-[10px] font-semibold text-cyan-200">
+            <span className="size-1.5 rounded-full bg-cyan-300" />
+            <span className="truncate">{currentUser?.name || 'Pedro Henrique'}</span>
+          </span>
+        </div>
 
         <div className="flex items-center gap-4">
-          <div className="relative w-64">
+          <div className="relative w-64 hidden md:block">
             <Search size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500" />
             <input
               type="text"
@@ -161,7 +167,7 @@ export default function DashboardView({
             <Bell size={16} />
           </button>
 
-          <div className="w-7 h-7 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-[11px] font-bold text-white shadow-sm">
+          <div className="size-8 rounded-full bg-gradient-to-br from-cyan-300/90 to-sky-500/80 border border-white/20 flex items-center justify-center text-[11px] font-bold text-slate-950 shadow-sm" title={`Perfil ativo: ${currentUser?.name || 'Pedro Henrique'}`}>
             {currentUser?.avatar || 'PH'}
           </div>
         </div>
